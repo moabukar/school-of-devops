@@ -12,7 +12,7 @@
 ### Level 1 (Fundamentals)
 
 - Linux
-    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/docs/linux/linux1.md)
+    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/linux)
     - [Linux part 2](https://moabukar.github.io/school-of-devops/level1/docs/linux/linux2.md)
     - [Linux Advanced](https://moabukar.github.io/school-of-devops/docs/level1/)
 - Git
