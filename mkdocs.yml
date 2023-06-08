@@ -7,20 +7,6 @@ theme:
   extra_css:
     - stylesheets/custom.css
 
-# nav:
-# - Home: index.md
-# - Level 1:
-#     - Fundamentals:
-#         - Linux:
-#             - Linux: level101/linux_basics/basics.md
-#         - Git:
-#             - Git Basics: level1/git/git-basics.md
-#             - Working With Branches: level1/git/branches.md
-#             - Github and Hooks: level101/git/github-hooks.md
-#             - Conclusion: level101/git/conclusion.md
-#         - Linux Networking:
-#             - Introduction: level1/linux_networking/intro.md
-
   features:
     - navigation.tabs
     - navigation.sections
@@ -46,6 +32,23 @@ theme:
       primary: teal
       accent: lime
 
+nav:
+- Home: index.md
+- Level 1:
+    - Fundamentals:
+        - Linux:
+            - Linux: level101/linux_basics/basics.md
+        - Git:
+            - Git Basics: level1/git/git-basics.md
+            - Working With Branches: level1/git/branches.md
+            - Github and Hooks: level101/git/github-hooks.md
+            - Conclusion: level101/git/conclusion.md
+        - Linux Networking:
+            - Introduction: level1/linux_networking/intro.md
+
+- Contribute: CONTRIBUTING.md
+- Code of Conduct: CODE_OF_CONDUCT.md
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -59,6 +62,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  
 
 copyright: |
   &copy; 2023 <a href="https://github.com/moabukar"  target="_blank" rel="noopener">Mohamed Abukar</a>
