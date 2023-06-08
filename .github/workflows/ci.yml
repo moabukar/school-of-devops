@@ -1,8 +1,7 @@
-name: ci 
+name: CI build for MKDocs
 on:
   push:
     branches:
-      - master 
       - main
 permissions:
   contents: write
