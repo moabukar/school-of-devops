@@ -12,13 +12,13 @@
 ### Level 1 (Fundamentals)
 
 - Linux
-    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/linux/linux1.md)
-    - [Linux part 2](https://moabukar.github.io/school-of-devops/level1/linux/linux2.md)
-    - [Linux Advanced](https://moabukar.github.io/school-of-devops/level1/)
+    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/docs/linux/linux1.md)
+    - [Linux part 2](https://moabukar.github.io/school-of-devops/level1/docs/linux/linux2.md)
+    - [Linux Advanced](https://moabukar.github.io/school-of-devops/docs/level1/)
 - Git
-    - [Git part 1](https://moabukar.github.io/school-of-devops/level1/git)
-    - [Git part 2](https://moabukar.github.io/school-of-devops/level1/git)
-    - [Git ](https://moabukar.github.io/school-of-devops/level1/git)
+    - [Git part 1](https://moabukar.github.io/school-of-devops/docs/level1/git/git-basics.md)
+    - [Git part 2](https://moabukar.github.io/school-of-devops/docs/level1/git/branches.md)
+    - [Git ](https://moabukar.github.io/school-of-devops/docs/level1/git/conclusion.md)
 - Networking
     - [Git part 1](https://moabukar.github.io/devops-pathway/level1/linux.md/)
     - [Git part 2](https://moabukar.github.io/devops-pathway/level1/git.md/)
