@@ -34,17 +34,32 @@ theme:
 
 nav:
 - Home: index.md
-- Level 1:
-    - Fundamentals:
-        - Linux:
-            - Linux: level101/linux_basics/basics.md
-        - Git:
-            - Git Basics: level1/git/git-basics.md
-            - Working With Branches: level1/git/branches.md
-            - Github and Hooks: level101/git/github-hooks.md
-            - Conclusion: level101/git/conclusion.md
-        - Linux Networking:
-            - Introduction: level1/linux_networking/intro.md
+- Level 1 - Fundamentals:
+    - Linux:
+        - Linux: level1/linux/linux1.md
+        - Linux 2: level1/linux/linux2.md
+    - Git:
+        - Git Basics: level1/git/git-basics.md
+        - Working With Branches: level1/git/branches.md
+        - Github and Hooks: level1/git/github-hooks.md
+        - Conclusion: level1/git/conclusion.md
+    - Linux Networking:
+        - Introduction: level1/networking/networking1.md
+    - AWS:
+        - Introduction: level1/aws/intro.md
+        - Compute: level1/aws/compute.md
+
+
+- Level 2:
+    - Terraform:
+        - Terraform basics: level2/terraform/basics.md
+    - Docker:
+        - Docker basics: level2/docker/intro.md
+    - CICD:
+        - Terraform basics: level2/cicd/intro.md
+    - Kubernetes:
+        - K8s basics: level2/k8s/intro.md
+
 
 - Contribute: CONTRIBUTING.md
 - Code of Conduct: CODE_OF_CONDUCT.md
