@@ -1,17 +1,32 @@
-# Welcome to MkDocs
+# School of DevOps
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+How it started?
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## DevOps Pathway
+ 
+### Level 1 (Fundamentals)
 
-## Project layout
+- Linux
+    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/linux/)
+    - [Linux part 2](https://moabukar.github.io/school-of-devops/level1/linux/)
+    - [Linux Advanced](https://moabukar.github.io/school-of-devops/level1/)
+- Git
+    - [Git part 1](https://moabukar.github.io/school-of-devops/level1/git)
+    - [Git part 2](https://moabukar.github.io/school-of-devops/level1/git)
+    - [Git ](https://moabukar.github.io/school-of-devops/level1/git)
+- Networking
+    - [Git part 1](https://moabukar.github.io/devops-pathway/level1/linux.md/)
+    - [Git part 2](https://moabukar.github.io/devops-pathway/level1/git.md/)
+    - [Networking](https://moabukar.github.io/devops-pathway/level1/networking.md/)
+- AWS
+    - [AWS Basics](https://moabukar.github.io/devops-pathway/level1/linux.md/)
+    - [AWS P2](https://moabukar.github.io/devops-pathway/level1/git.md/)
+    - [AWS P3](https://moabukar.github.io/devops-pathway/level1/networking.md/)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Level 2
+
+- Terraform
+    - [Terraform Basics](https://moabukar.github.io/devops-pathway/level1/linux.md/)
+    - [Terraform workflow](https://moabukar.github.io/devops-pathway/level1/git.md/)
+    - [Terraform testing](https://moabukar.github.io/devops-pathway/level1/networking.md/)
