@@ -3,7 +3,7 @@ site_url: https://moabukar.github.io/school-of-devops/
 docs_dir: docs
 theme: 
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   extra_css:
     - stylesheets/custom.css
 
