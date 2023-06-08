@@ -1,7 +1,11 @@
 site_name: School of DevOps
 site_url: https://moabukar.github.io/school-of-devops/
+docs_dir: docs
 theme: 
   name: material
+  # custom_dir: overrides
+  extra_css:
+    - stylesheets/custom.css
 
 # nav:
 # - Home: index.md
@@ -42,15 +46,6 @@ theme:
       primary: teal
       accent: lime
 
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/moabukar
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/moabukar_1
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/moabukar/
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -67,3 +62,12 @@ markdown_extensions:
 
 copyright: |
   &copy; 2023 <a href="https://github.com/moabukar"  target="_blank" rel="noopener">Mohamed Abukar</a>
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/moabukar
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/moabukar_1
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/moabukar/
