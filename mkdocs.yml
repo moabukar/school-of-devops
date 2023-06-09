@@ -39,8 +39,8 @@ nav:
 - Home: index.md
 - Level 1 - Fundamentals:
     - Linux:
-        - Linux: level1/linux/linux1.md
-        - Linux 2: level1/linux/linux2.md
+        - Linux Intro: level1/linux/linux1.md
+        - Linux CLI: level1/linux/linux2.md
     - Git:
         - Git Basics: level1/git/git-basics.md
         - Working With Branches: level1/git/branches.md
