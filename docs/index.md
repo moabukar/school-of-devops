@@ -12,7 +12,8 @@
 - Git
     - [Git part 1](https://moabukar.github.io/school-of-devops/docs/level1/git/git-basics)
 - Networking
-    - [Git part 1](https://moabukar.github.io/school-of-devops/level1/networking/networking1/)
+    - [Networking Plan](https://moabukar.github.io/school-of-devops/level1/networking/plan/)
+    - [Networking Basics](https://moabukar.github.io/school-of-devops/level1/networking/basics/)
 - AWS
     - [AWS Basics](https://moabukar.github.io/devops-pathway/level1/linux.md/)
     - [AWS P2](https://moabukar.github.io/devops-pathway/level1/git.md/)
