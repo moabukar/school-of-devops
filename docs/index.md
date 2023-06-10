@@ -21,14 +21,28 @@
 ### Level 2
 
 - Terraform
-    - [Terraform Basics](https://moabukar.github.io/devops-pathway/level1/linux.md/)
-    - [Terraform workflow](https://moabukar.github.io/devops-pathway/level1/git.md/)
-    - [Terraform testing](https://moabukar.github.io/devops-pathway/level1/networking.md/)
+    - [Terraform Plan](https://moabukar.github.io/devops-pathway/level2/terraform/plan/)
+    - [Terraform Intro](https://moabukar.github.io/devops-pathway/level2/terraform/intro/)
 
+
+- CI/CD
+    - [CICD Plan](https://moabukar.github.io/devops-pathway/level2/terraform/plan/)
+    - [CICD Intro](https://moabukar.github.io/devops-pathway/level2/terraform/intro/)
+
+- Docker
+    - [Docker Plan](https://moabukar.github.io/devops-pathway/level2/docker/plan/)
+    - [Docker Intro](https://moabukar.github.io/devops-pathway/level2/docker/intro/)
+
+- Kubernetes
+    - [Kubernetes Plan](https://moabukar.github.io/devops-pathway/level2/k8s/plan/)
+    - [Kubernetes Intro](https://moabukar.github.io/devops-pathway/level2/k8s/intro/)
 
 ### Level 3
+
+
 
 ### Level 4
 
 
 ### Level 5
+

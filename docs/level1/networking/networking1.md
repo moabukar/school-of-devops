@@ -1,4 +1,0 @@
-# Networking basics
-
-- HTTP
-- DNS
