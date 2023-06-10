@@ -59,3 +59,5 @@ system by a package manager.
 - **Device drivers are used to communicate with the hardware devices.**
     - Device drivers are software components that facilitate communication between the operating system and hardware devices. In the Linux ecosystem, device drivers are used to control and manage various hardware components, such as network cards, graphics cards, storage devices, and input/output devices. They provide an abstraction layer that allows the operating system to interact with the specific functionalities and features of each hardware device, enabling proper utilization and integration of hardware resources within the system.
 
+
+

@@ -7,8 +7,8 @@
 ### Level 1 (Fundamentals)
 
 - Linux
-    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/linux/linux1/)
-    - [Linux part 2](https://moabukar.github.io/school-of-devops/level1/linux/linux2/)
+    - [Linux Basics](https://moabukar.github.io/school-of-devops/level1/linux/basics/)
+    - [Linux CLI](https://moabukar.github.io/school-of-devops/level1/linux/cli/)
 - Git
     - [Git part 1](https://moabukar.github.io/school-of-devops/docs/level1/git/git-basics)
 - Networking
