@@ -34,12 +34,12 @@ Any folder can be converted into a git repository. After executing the following
 ```bash
 # creating an empty folder and changing current dir to it
 $ cd /tmp
-$ mkdir school-of-sre
-$ cd school-of-sre/
+$ mkdir school-of-devops
+$ cd school-of-devops/
 
 # initialize a git repo
 $ git init
-Initialized empty Git repository in /private/tmp/school-of-sre/.git/
+Initialized empty Git repository in /private/tmp/school-of-devops/.git/
 ```
 
 As the output says, an empty git repo has been initialized in our folder. Let's take a look at what is there.
