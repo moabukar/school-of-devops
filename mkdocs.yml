@@ -37,23 +37,23 @@ theme:
 
 nav:
 - Home: index.md
-- Level 1 - Fundamentals:
+- Level 1 (Fundamentals) :
     - Linux:
-        - Linux Intro: level1/linux/linux1.md
-        - Linux CLI: level1/linux/linux2.md
+        - Linux Intro: level1/linux/basics.md
     - Git:
         - Git Basics: level1/git/git-basics.md
         - Working With Branches: level1/git/branches.md
         - Github and Hooks: level1/git/github-hooks.md
         - Conclusion: level1/git/conclusion.md
-    - Linux Networking:
-        - Introduction: level1/networking/networking1.md
+    - Networking:
+        - Networking Curriculum: level1/networking/plan.md
+        - Networking Basics: level1/networking/basics.md
     - AWS:
         - Introduction: level1/aws/intro.md
         - Compute: level1/aws/compute.md
 
 
-- Level 2:
+- Level 2 (Infrastructure & Containers):
     - Terraform:
         - Terraform plan: level2/terraform/plan.md
         - Terraform intro: level2/terraform/intro.md
@@ -64,6 +64,23 @@ nav:
     - Kubernetes:
         - K8s basics: level2/k8s/intro.md
 
+- Level 3 (Scripting & Coding):
+    - Python:
+        - Python plan: level3/python/basics.md
+    - Golang:
+        - Golang basics: level3/golang/basics.md
+    - Scripting:
+        - Scripting basics: level3/scripting/basics.md
+
+- Level 4 (Monitoring & Infra Management):
+    - Ansible:
+        - Ansible plan: level4/ansible/basics.md
+    - Helm:
+        - Helm basics: level4/helm/basics.md
+    - Monitoring:
+        - Monitoring basics: level4/monitoring/basics.md
+    - SRE:
+        - SRE basics: level4/sre/basics.md
 
 - Contribute: CONTRIBUTING.md
 - Code of Conduct: CODE_OF_CONDUCT.md

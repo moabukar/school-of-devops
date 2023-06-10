@@ -1,2 +1,0 @@
-# Empty Linux MD
-
