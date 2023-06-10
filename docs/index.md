@@ -15,28 +15,28 @@
     - [Networking Plan](https://moabukar.github.io/school-of-devops/level1/networking/plan/)
     - [Networking Basics](https://moabukar.github.io/school-of-devops/level1/networking/basics/)
 - AWS
-    - [AWS Basics](https://moabukar.github.io/devops-pathway/level1/linux.md/)
-    - [AWS P2](https://moabukar.github.io/devops-pathway/level1/git.md/)
-    - [AWS P3](https://moabukar.github.io/devops-pathway/level1/networking.md/)
+    - [AWS Basics](https://moabukar.github.io/school-of-devops/level1/aws/intro/)
+    - [AWS P2](https://moabukar.github.io/school-of-devops/level1/aws/linux1/)
+    - [AWS P3](https://moabukar.github.io/school-of-devops/level1/networking.md/)
 
 ### Level 2
 
 - Terraform
-    - [Terraform Plan](https://moabukar.github.io/devops-pathway/level2/terraform/plan/)
-    - [Terraform Intro](https://moabukar.github.io/devops-pathway/level2/terraform/intro/)
+    - [Terraform Plan](https://moabukar.github.io/school-of-devops/level2/terraform/plan/)
+    - [Terraform Intro](https://moabukar.github.io/school-of-devops/level2/terraform/intro/)
 
 
 - CI/CD
-    - [CICD Plan](https://moabukar.github.io/devops-pathway/level2/terraform/plan/)
-    - [CICD Intro](https://moabukar.github.io/devops-pathway/level2/terraform/intro/)
+    - [CICD Plan](https://moabukar.github.io/school-of-devops/level2/terraform/plan/)
+    - [CICD Intro](https://moabukar.github.io/school-of-devops/level2/terraform/intro/)
 
 - Docker
-    - [Docker Plan](https://moabukar.github.io/devops-pathway/level2/docker/plan/)
-    - [Docker Intro](https://moabukar.github.io/devops-pathway/level2/docker/intro/)
+    - [Docker Plan](https://moabukar.github.io/school-of-devops/level2/docker/plan/)
+    - [Docker Intro](https://moabukar.github.io/school-of-devops/level2/docker/intro/)
 
 - Kubernetes
-    - [Kubernetes Plan](https://moabukar.github.io/devops-pathway/level2/k8s/plan/)
-    - [Kubernetes Intro](https://moabukar.github.io/devops-pathway/level2/k8s/intro/)
+    - [Kubernetes Plan](https://moabukar.github.io/school-of-devops/level2/k8s/plan/)
+    - [Kubernetes Intro](https://moabukar.github.io/school-of-devops/level2/k8s/intro/)
 
 ### Level 3
 

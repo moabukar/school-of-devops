@@ -55,7 +55,8 @@ nav:
 
 - Level 2:
     - Terraform:
-        - Terraform basics: level2/terraform/basics.md
+        - Terraform plan: level2/terraform/plan.md
+        - Terraform intro: level2/terraform.intro.md
     - Docker:
         - Docker basics: level2/docker/intro.md
     - CICD:
