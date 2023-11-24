@@ -1,20 +1,7 @@
-## OSI Model (Layer 1 to 7)
+# OSI Model (Layer 1 to 7)
 
 The OSI (Open Systems Interconnection) model is a conceptual framework used to understand how different network protocols and technologies interact with each other. It consists of seven layers:
 
-1. **Physical Layer**: This layer deals with the physical transmission of data over the network, including the specifications of cables, connectors, and network devices.
-
-2. **Data Link Layer**: The data link layer provides reliable and error-free communication between directly connected devices by using protocols like Ethernet. It handles framing, error detection, and flow control.
-
-3. **Network Layer**: The network layer is responsible for logical addressing and routing of data packets. IP (Internet Protocol) operates at this layer and enables the internetworking of different networks.
-
-4. **Transport Layer**: The transport layer ensures reliable and orderly delivery of data between end systems. TCP (Transmission Control Protocol) provides reliable, connection-oriented communication, while UDP (User Datagram Protocol) offers faster, connectionless communication.
-
-5. **Session Layer**: The session layer establishes, manages, and terminates connections between applications. It provides services such as session establishment, synchronization, and checkpointing.
-
-6. **Presentation Layer**: The presentation layer handles data formatting and conversion to ensure compatibility between different systems. It deals with data encryption, compression, and character encoding.
-
-7. **Application Layer**: The application layer is responsible for providing services directly to the end-user applications. Protocols like HTTP, FTP, DNS, and SMTP operate at this layer.
 
 ## IP/TCP/UDP
 

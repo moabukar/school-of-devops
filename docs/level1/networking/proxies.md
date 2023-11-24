@@ -1,0 +1,41 @@
+## **Proxy & Reverse Proxy**
+
+- Proxy
+    - a server that makes requests on your behalf (client knows the server but server doesn’t know client)
+    - your TCP is connection is being established with a proxy before going to the destination
+    - establsh a TCP connection between you and the content client of Layer 7 will go to google.com. You send a GET / request and the request will go to google.com
+    - `use case
+        - caching, anonymity, logging, block sites, microservices
+    - fiddler (mitmproxy, a common proxy to monitor your requests locally)
+    - for a proxy
+        - from a layer 4 (TCP) perspective, the proxy is the final destination
+        - from a layer 7 (HTTP) perspective, the backend server is the final destination
+
+- Reverse proxy (opposite of proxy) RP= reverse proxy
+    - client does not know the final destination (the actual server the site is hosted where the request lands
+        - so the client only knows that [google.com](http://google.com) is the final proxy (the frontend/edge server) but google.com routes requests to the google-server (backend servers) behind the scenes
+    - load balancing was born from this
+        - this reverse proxy server can load balance between the backend servers and use things like round robin and various other LB methods
+        - the RP can even take requests to different servers based on the path youre going
+            - so each server can be separated for different tools (one server for POST, another server for GET etc)
+        - so a load balancer is reverse proxy but not every reverse proxy is a load balancer
+        - an PR is just that it makes request to something on the backend you don’t know about
+        - for a reverse proxy
+            - from  a lyer 4 and layer 7 perspective, the reverse proxy is the final destination
+        - Use cases
+            - caching/CDN (cdn is basically a glorified reverse proxy)
+            - load balancing (balance your request to multiple servers on the backend)
+            - ingress
+            - canary deployment
+            - micro services
+        - can proxy and reverse proxy be used at the same time?
+            - yes but you won’t know
+        - Can i use proxy instead of VPN for anonymity?
+            - no, its not a good idea because some proxies terminate aliases and look at your content
+            - VPN operate at the IP level. so any IP packet, they encrypt
+            - Proxy operates at L4 and above so it needs to know about ports and protocol
+        - Is proxy just for HTTP traffic?
+            - not really there are many types of proxies but HTTP is the most popular
+            - there is a mode when you use HTTPS proxy called tunnel mode: where the client can ask the proxy to open a connection for it
+                - tunnel mode: research this!
+  

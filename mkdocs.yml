@@ -39,31 +39,58 @@ nav:
 - Home: index.md
 - Level 1 (Fundamentals) :
     - Linux:
-        - Linux Basics: level1/linux/basics.md
-        - Linux CLI: level1/linux/cli.md
+        - Basics: level1/linux/basics.md
+        - CLI: level1/linux/cli.md
     - Git:
-        - Git Basics: level1/git/git-basics.md
+        - Basics: level1/git/git-basics.md
         - Working With Branches: level1/git/branches.md
         - Github and Hooks: level1/git/github-hooks.md
         - Conclusion: level1/git/conclusion.md
     - Networking:
-        - Networking Curriculum: level1/networking/plan.md
-        - Networking Basics: level1/networking/basics.md
+        - Syllabus: level1/networking/plan.md
+        - OSI Model: level1/networking/osi.md
+        - Basics: level1/networking/basics.md
+        - Protocols: level1/networking/protocols.md
+        - Proxies: level1/networking/proxies.md
+        - Load balancers: level1/networking/load-balancers.md
     - AWS:
+        - Syllabus: level1/aws/plan.md
         - Introduction: level1/aws/intro.md
         - Compute: level1/aws/compute.md
 
 
 - Level 2 (Infrastructure & Containers):
     - Terraform:
-        - Terraform plan: level2/terraform/plan.md
-        - Terraform intro: level2/terraform/intro.md
+        - Syllabus: level2/terraform/plan.md
+        - Intro: level2/terraform/intro.md
+        - Basics: level2/terraform/basics.md
+        - Building with Terraform: level2/terraform/building.md
+        - Modules & Advanced: level2/terraform/modules.md
+        - Terraform in the Cloud: level2/terraform/cloud.md
+        - Best Practices: level2/terraform/best-practices.md
     - Docker:
-        - Docker basics: level2/docker/intro.md
+        - Syllabus: level2/docker/plan.md
+        - Intro: level2/docker/intro.md
+        - Basics: level2/docker/basics.md
+        - Containers: level2/docker/containers.md
+        - Building with Docker: level2/docker/building.md
+        - Docker Compose & Multi-Container Apps: level2/docker/compose.md
+        - Advanced & Best Practices: level2/docker/advanced.md
     - CICD:
-        - Terraform basics: level2/cicd/intro.md
+        - Syllabus: level2/cicd/plan.md
+        - Intro to CICD: level2/cicd/intro.md
+        - Getting started with GitHub Actions: level2/cicd/basics.md
+        - Continuous Integration with GitHub Actions: level2/cicd/ci.md
+        - Continuous Deployment & Delivery with GitHub Actions: level2/cicd/cd.md
+        - IaC & GitHub Actions: level2/cicd/iac.md
+        - Advanced Features: level2/cicd/advanced.md
+        - Real-world applications: level2/cicd/real-world.md
     - Kubernetes:
-        - K8s basics: level2/k8s/intro.md
+        - Syllabus: level2/k8s/plan.md
+        - Basics: level2/k8s/intro.md
+        - Setting up a K8s environemnt: level2/k8s/setup.md
+        - K8s core concepts: level2/k8s/basics.md
+        
 
 - Level 3 (Scripting & Coding):
     - Python:
