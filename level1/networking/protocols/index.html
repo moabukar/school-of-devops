@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Protocols - School of DevOps</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://moabukar.github.io/school-of-devops/level1/networking/protocols/">
+        <meta name="author" content="Mohamed Abukar">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">School of DevOps</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-1-(fundamentals)-collapse" aria-expanded="false">
+                    Level 1 (Fundamentals)
+                </a>
+                <div class="collapse" id="level-1-(fundamentals)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#linux-collapse" aria-expanded="false">
+            Linux
+        </a>
+
+        <div class="collapse" id="linux-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../linux/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../linux/cli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CLI
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#git-collapse" aria-expanded="false">
+            Git
+        </a>
+
+        <div class="collapse" id="git-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../git/git-basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../git/branches/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Working With Branches
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../git/github-hooks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Github and Hooks
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../git/conclusion/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Conclusion
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#networking-collapse" aria-expanded="false">
+            Networking
+        </a>
+
+        <div class="collapse" id="networking-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../osi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Protocols
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../proxies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxies
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../load-balancers/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Load balancers
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#aws-collapse" aria-expanded="false">
+            AWS
+        </a>
+
+        <div class="collapse" id="aws-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Introduction
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/compute/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Compute
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-2-(infrastructure-&-containers)-collapse" aria-expanded="false">
+                    Level 2 (Infrastructure & Containers)
+                </a>
+                <div class="collapse" id="level-2-(infrastructure-&-containers)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#terraform-collapse" aria-expanded="false">
+            Terraform
+        </a>
+
+        <div class="collapse" id="terraform-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/building.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Building with Terraform
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/modules.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modules & Advanced
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/cloud.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Terraform in the Cloud
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/best-practices.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Best Practices
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#docker-collapse" aria-expanded="false">
+            Docker
+        </a>
+
+        <div class="collapse" id="docker-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/containers.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Containers
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/building.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Building with Docker
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/compose.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose & Multi-Container Apps
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/advanced.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Advanced & Best Practices
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#cicd-collapse" aria-expanded="false">
+            CICD
+        </a>
+
+        <div class="collapse" id="cicd-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro to CICD
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Getting started with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/ci.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Continuous Integration with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/cd.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Continuous Deployment & Delivery with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/iac.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IaC & GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/advanced.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Advanced Features
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/real-world.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Real-world applications
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#kubernetes-collapse" aria-expanded="false">
+            Kubernetes
+        </a>
+
+        <div class="collapse" id="kubernetes-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/setup.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Setting up a K8s environemnt
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            K8s core concepts
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-3-(scripting-&-coding)-collapse" aria-expanded="false">
+                    Level 3 (Scripting & Coding)
+                </a>
+                <div class="collapse" id="level-3-(scripting-&-coding)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#python-collapse" aria-expanded="false">
+            Python
+        </a>
+
+        <div class="collapse" id="python-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/python/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Python plan
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#golang-collapse" aria-expanded="false">
+            Golang
+        </a>
+
+        <div class="collapse" id="golang-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/golang/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Golang basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#scripting-collapse" aria-expanded="false">
+            Scripting
+        </a>
+
+        <div class="collapse" id="scripting-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/scripting/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scripting basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-4-(monitoring-&-infra-management)-collapse" aria-expanded="false">
+                    Level 4 (Monitoring & Infra Management)
+                </a>
+                <div class="collapse" id="level-4-(monitoring-&-infra-management)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#ansible-collapse" aria-expanded="false">
+            Ansible
+        </a>
+
+        <div class="collapse" id="ansible-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/ansible/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ansible plan
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#helm-collapse" aria-expanded="false">
+            Helm
+        </a>
+
+        <div class="collapse" id="helm-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/helm/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Helm basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#monitoring-collapse" aria-expanded="false">
+            Monitoring
+        </a>
+
+        <div class="collapse" id="monitoring-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/monitoring/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Monitoring basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#sre-collapse" aria-expanded="false">
+            SRE
+        </a>
+
+        <div class="collapse" id="sre-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/sre/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SRE basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../../CONTRIBUTING/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Contribute
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../../CODE_OF_CONDUCT/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Code of Conduct
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../basics/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../proxies/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="protocols">Protocols</h1>
+<h3 id="osi-recap">OSI Recap ✅</h3>
+<ul>
+<li><strong>Abstraction or Concept of the Internet</strong></li>
+<li><strong>Layers 1 to 7:</strong></li>
+<li>Layer 1: Physical</li>
+<li>Layer 2: Data frames and more</li>
+<li>Layer 3: IP</li>
+<li>Layer 4: TCP/UDP, Ports</li>
+<li>Layer 5: Session layer (e.g., Linkerd)</li>
+<li>Layer 6: Presentation</li>
+<li>
+<p>Layer 7: Application layer (HTTP, HTTPS, etc.)</p>
+</li>
+<li>
+<p><strong>TCP/IP Model</strong></p>
+</li>
+<li>A simplified model focusing on Layers 3/4 &amp; 7</li>
+</ul>
+<h3 id="tcp-layer-4">TCP ✅ (Layer 4)</h3>
+<ul>
+<li><strong>Transmission Control Protocol</strong></li>
+<li>Controls transmission, unlike UDP which is like a firehose</li>
+<li>Connection-oriented</li>
+<li>Requires a handshake</li>
+<li>20-byte header segment</li>
+<li>Stateful</li>
+<li>Ideal for reliable communications, SSH, database connections, web communications, etc.</li>
+<li><strong>TCP Connection</strong></li>
+<li>Connection represents a session</li>
+<li>An agreement between client and server</li>
+<li>Identified by four properties: SourceIP-SourcePort and DestinationIP-DestinationPort</li>
+<li>Requires a 3-way TCP handshake (SYN, SYN-ACK, ACK)</li>
+<li>Segments are sequenced, ordered, acknowledged, and retransmitted if lost</li>
+<li><strong>Multiplexing and Demultiplexing</strong></li>
+<li>Sender multiplexes applications into TCP connections</li>
+<li>Receiver demultiplexes TCP segments to apps based on connection pairs</li>
+<li><strong>Connection Establishment</strong></li>
+<li>Three-way handshake process described with an example</li>
+<li><strong>Sending Data</strong></li>
+<li>Data encapsulation in segments and acknowledgement process</li>
+<li>Hint: Can new segments be sent before the acknowledgement of old segments?</li>
+<li><strong>Handling Lost Data</strong></li>
+<li>Resending lost segments</li>
+<li><strong>Closing Connection</strong></li>
+<li>Four-step process: FIN, ACK, FIN, ACK</li>
+<li><strong>Summary</strong></li>
+<li>Layer 4 protocol</li>
+<li>Introduces the concept of connection</li>
+<li>Features retransmission, acknowledgement, and guaranteed delivery</li>
+<li>Stateful with a defined state for connections</li>
+<li><strong>Pros &amp; Cons of TCP</strong></li>
+<li>Pros: Guaranteed delivery, flow control, ordered packets, secure</li>
+<li>Cons: Larger overhead, higher bandwidth usage, stateful nature, high latency for certain workloads, issues like TCP meltdown</li>
+</ul>
+<h3 id="udp-layer-4"><strong>UDP ✅ (Layer 4)</strong></h3>
+<ul>
+<li><strong>User Datagram Protocol</strong></li>
+<li>A simple protocol for sending and receiving data.</li>
+<li>No prior communication required (this can be convenient but also a security risk).</li>
+<li>Stateless - no information is stored on the host.</li>
+<li>Features an 8-byte header datagram.</li>
+<li>Use cases: video streaming, VPN, DNS, WebRTC.</li>
+<li><strong>Multiplexing &amp; Demultiplexing</strong></li>
+<li>Sender multiplexes all its applications into UDP.</li>
+<li>Receiver demultiplexes UDP datagrams to each application.</li>
+<li><strong>Source &amp; Destination Port</strong></li>
+<li>Example: App1 on 10.0.0.1 sends data to AppX on 10.0.0.2.</li>
+<li>Destination Port = 53.</li>
+<li>AppX responds back to App1.</li>
+<li>Source Port is necessary for return data (e.g., Source Port = 5555).</li>
+<li><strong>UDP Pros &amp; Cons</strong></li>
+<li>Pros:<ul>
+<li>Simplistic protocol.</li>
+<li>Small header size results in smaller datagrams.</li>
+<li>Uses less bandwidth.</li>
+<li>Stateless nature.</li>
+<li>Consumes less memory (no state stored on server/client).</li>
+</ul>
+</li>
+<li>Cons:<ul>
+<li>No acknowledgements (Acks).</li>
+<li>No guaranteed delivery.</li>
+<li>Connection-less – anyone can send data without prior knowledge.</li>
+<li>No flow control.</li>
+<li>No congestion control.</li>
+<li>Unordered packets.</li>
+<li>Security concerns – susceptibility to spoofing.</li>
+</ul>
+</li>
+<li><strong>Summary</strong></li>
+<li>UDP is a Layer 4 protocol.</li>
+<li>Utilises ports to address processes.</li>
+<li>Stateless in nature.</li>
+</ul>
+<h3 id="tls-typically-layer-5-due-to-its-stateful-nature">TLS (Typically Layer 5 due to its stateful nature)</h3>
+<ul>
+<li><strong>Transport Layer Security (TLS)</strong></li>
+<li>
+<p>Generally associated with Layer 5 due to its session management capabilities.</p>
+</li>
+<li>
+<p><strong>Vanilla HTTP</strong></p>
+</li>
+<li>Client sends a GET request (without a body) to the Server.</li>
+<li>Process:<ul>
+<li>Transforms into a TCP segment.</li>
+<li>Becomes an IP packet.</li>
+</ul>
+</li>
+<li>The server listens on port 80.</li>
+<li>Server receives the segment and understands the request.</li>
+<li>
+<p>The application responds with headers and the requested content (e.g., index.html).</p>
+</li>
+<li>
+<p><strong>HTTPS (HTTP over TLS)</strong></p>
+</li>
+<li>Begins with establishing a connection and performing a handshake.</li>
+<li>Handshake aims to exchange symmetric keys for encryption.</li>
+<li>Client's GET request is encrypted using these keys.</li>
+<li>The server decrypts the received data using the same key.</li>
+<li>
+<p>Encryption methods:</p>
+<ul>
+<li>Symmetric key: The same key is used for both encryption and decryption.</li>
+<li>Asymmetric keys: Different keys are used for encryption and decryption.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLS 1.2</strong></p>
+</li>
+<li>Uses a private key to encrypt the symmetric key.</li>
+<li>
+<p>The Heartbleed OpenSSL bug (2012-2014) led to scepticism about using RSA, as it lacks forward secrecy.</p>
+</li>
+<li>
+<p><strong>Diffie-Hellman Key Exchange</strong></p>
+</li>
+<li>Utilises two private keys and one symmetric key.</li>
+<li>
+<p>One private key for the client and one for the server.</p>
+</li>
+<li>
+<p><strong>TLS 1.3 Improvements</strong></p>
+</li>
+<li>An enhanced version using the Diffie-Hellman algorithm.</li>
+<li>Mathematical basis:<ul>
+<li>Server-side equation: <span class="arithmatex">\((g^x \% n)^y = g^{xy} \% n\)</span>.</li>
+<li>Client-side equation: <span class="arithmatex">\((g^y \% n)^x = g^{xy} \% n\)</span>.</li>
+</ul>
+</li>
+<li>TLS 1.3 is currently the preferred standard due to its security and efficiency.</li>
+</ul>
+<h2 id="http11"><strong>HTTP/1.1</strong></h2>
+<ul>
+<li>
+<p>HTTP request</p>
+<ul>
+<li>Method (GET, POST, PUT, DELETE, PATCH, OPTIONS)</li>
+<li>Path (/, /about, etc etc)</li>
+<li>Protocol (HTTP/HTTP 1.1, HTTP 1.2, gRPC)</li>
+<li>Headers (key-value, like User-Agent, host header etc)</li>
+<li>Body (GET request doesn’t have any, POST, DELETE and other methods do)</li>
+<li>example: <code>curl -v http://google.com/about</code></li>
+</ul>
+</li>
+<li>
+<p>HTTP response</p>
+<ul>
+<li>Protocol (HTTP/1.1, HTTP/2)</li>
+<li>Code (200, 301, etc etc)</li>
+<li>Location: url</li>
+<li>content-type: text/html</li>
+<li>server: where site is hosted.</li>
+</ul>
+<p>HTTPS (port 444 is introduced here too) </p>
+<ul>
+<li>after TCP, do a TLS handshake<ul>
+<li>in TLS handshake, both the client and the server will agree on the symmetric key (and symmetric encryption is used here, much faster than asymmetric encryption)</li>
+<li>same key encrypts and same key decrypts - because its same key used, key exchange is critical. so we use something called RSA or diffi hellman to exchange keys</li>
+<li>then keys are used to encrypt the GET request and headers are sent back and content using encrypted keys</li>
+</ul>
+</li>
+<li>HTTP 1.0</li>
+<li>New TCP connection with each request (after each request, the connection is closed to save CPU &amp; memory)</li>
+<li>Slow</li>
+<li>Bufferring (trasnfer-encoding: chubked didnt exist)</li>
+<li>No multi-home websites (HOST header)</li>
+</ul>
+</li>
+<li>
+<p>HTTP 1.1</p>
+<ul>
+<li>Persisted TCP connection: Connection is not closed immediately with each request. All use same TCP connection.</li>
+<li>Low latency &amp; Low CPU usage</li>
+<li>HTTP request smuggling could happen. When server doesn’t know where requests end or start</li>
+<li>Streaming with chunked transfer</li>
+<li>Pipelining (can run multiple requests in parallel without having to wait for response. Disabled by default and not guaranteed it will work correctly</li>
+<li>Proxying &amp; multi-homed websites (1 IP can host 1000s of websites, the URL of the website is searched when looking for the site and not the IP)</li>
+</ul>
+</li>
+<li>
+<p>HTTP/2</p>
+<ul>
+<li>Used to be called SPDY &amp; invented by Google</li>
+<li>Compression (both headers and the body). Header compression was disabled in HTTP/1 due to an attack called Crime (hackers were able to extract key info due to the way headers were compressed)</li>
+<li>Multiplexing</li>
+<li>Sever push</li>
+<li>Secure by default (coz of protocol ossification)</li>
+<li>Protocol negotiation during TLS</li>
+</ul>
+</li>
+<li>
+<p>HTTP over QUIC (HTTP/3)</p>
+<ul>
+<li>Replaces TCP with QUIC (UDP with congestion control)</li>
+<li>All HTTP/2 features</li>
+<li>Without HOL (head of line blocking?)</li>
+</ul>
+</li>
+</ul>
+<h2 id="websockets"><strong>Websockets</strong></h2>
+<ul>
+<li>Bidirectional communication designed for the web</li>
+<li>Websockets are built on top of HTTP</li>
+<li>HTTP 1.0 (connection is not persistent, keeps closing), HTTP 1.1 (persisitent connection), then an opportunity for websockets coz connection is alive now</li>
+<li>Websocket proces<ul>
+<li>Open connection</li>
+<li>Websocket handshake (just a HTTP request with a special semantic. You get a connection which now says your connection is now web sockety</li>
+<li>Because the connection is alive, we can do loads of bidirectional communication. (This couldn’t be done with HTTP 1.0 coz connection is not always alive)</li>
+</ul>
+</li>
+<li>Websockets handshake<ul>
+<li>ws:// or wss:// (secure version)</li>
+<li>Client server example<ul>
+<li>Req for websocket<ul>
+<li>GET /chat HTTP/1.1</li>
+<li>Host: server.exmaple.com</li>
+<li>websocket</li>
+</ul>
+</li>
+<li>Response for ws<ul>
+<li>HTTP/1.1 - 101 Switching protocol code</li>
+<li>Upgrade: websocket</li>
+<li>Some more headers like key etc etc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use cases: chatting, live feed, multiplayer gaming, showing client progress/logging , whatsApp, discord</li>
+<li>Some other useful info; Ping Pong is sent frequently to keep the websocket connection alive.</li>
+<li>Pros &amp; Cons<ul>
+<li>Pros:<ul>
+<li>Full duplex (no polling) - left and right - bidirectional comms</li>
+<li>HTTP compatible (more friendly) (note: if you used TCP, you would have to build your own port)</li>
+<li>Firewall friendly (standard)</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Proxying is tricky (need to terminate websocket connection &amp; read message &amp; establish another websocket connection</li>
+<li>L7 LB challenging (due to timeouts) (L4 LB can be done but kind of consuming on the backend)</li>
+<li>Stateful (knowledge of both client and server), difficult to horizontally scale</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Do you have to use websockets?<ul>
+<li>No</li>
+<li>Rule of thumb - do you absolutely need bidirectional comms</li>
+<li>Long polling</li>
+<li>Plus websockets have extra headers and stuff to be managed. Just extra stuff</li>
+<li>Server Sent Events</li>
+<li>Note: Clients are connected to 1 server where messages are received. No one is connected to each other directly except through server where messages are broadcasted</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="http2-improved-version-of-http1"><strong>HTTP/2 (improved version of HTTP/1)</strong></h2>
+<ul>
+<li>
+<p>HTTP 1.1 recap</p>
+<ul>
+<li>make req, you get 200, OK and get HTML docs (index.html, main.css, main.js, img1.jpg)</li>
+<li>Browser can can use 6 concurrent request using 6 SEPARATE tcp connections (not sure why 6 but chrome picked it?)</li>
+</ul>
+</li>
+<li>
+<p>HTTP/2</p>
+<ul>
+<li>Send all concurrent requests using same TCP connection.</li>
+<li>Every request is tagged with a unique stream ID</li>
+<li>Client uses odd stream ID numbers to send (thats how you know its the client sending</li>
+<li>and the Server sends responses using an even stream ID number to send back responses</li>
+</ul>
+</li>
+<li>HTTP/2 Push<ul>
+<li>legacy and not commonly used</li>
+<li>Push mechanism is not scaleable</li>
+</ul>
+</li>
+<li>Pros<ul>
+<li>Multiplexing over single connection (save resources - 1 connection instead of 6 resources like in HTTP/1.1)</li>
+<li>Compress both headers and data/body</li>
+<li>Server Push</li>
+<li>secure by default (because of protocol ossification)</li>
+<li>Protocol negotiataion during TLS</li>
+</ul>
+</li>
+<li>
+<p>Cons</p>
+<ul>
+<li>TCP head of line blocking (when you send a request like 5/6 streams and you send in order, the TCP will label the bytes/segments in order. For e.g. if you send 10 requests and lets say the first req is dropped. If the server recieves req 2-10, the server will not process any of them.</li>
+<li>Server push never picked up</li>
+<li>High CPU usage</li>
+</ul>
+</li>
+<li>
+<p>Main reason why HTTP/2 was designed was because the client sends a lot of requests in the same connection. That’s the only reason why it was built. Because we want to send multiple requests concurrently.</p>
+</li>
+</ul>
+<h2 id="http3-http-over-quic-multiplexed-streams">HTTP/3 - HTTP over QUIC multiplexed streams</h2>
+<ul>
+<li>
+<p>HTTP 1.1 recap</p>
+<ul>
+<li>using 1 connection per request (slow)</li>
+</ul>
+</li>
+<li>
+<p>How HTTP/2 works? Recap</p>
+<ul>
+<li>multiple streams for requests in 1 connection</li>
+</ul>
+</li>
+<li>
+<p>HTTP/2 cons recap</p>
+<ul>
+<li>TCP head of line blocking<ul>
+<li>TCP segments must be delivered in order</li>
+<li>but streams dont have to</li>
+<li>blocking requests</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+<li>
+<p>How HTTP/3 &amp; QUIC saves the day</p>
+<ul>
+<li>HTTP/3 is built on top of QUIC (and QUIC is built on UDP)</li>
+<li>like HTTP/2, QUIC has streams</li>
+<li>but QUIC uses UDP instead</li>
+<li>HTTP/3 streams - (the request are now datagrams instead of TCP segments)<ul>
+<li>QUIC manages the streams and sequences (its kind of like a “TCP connection” for each stream</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Pros</p>
+<ul>
+<li>Merges connection setup &amp; TLS in one handshake (secure by default), I want QUIC to be secure by default</li>
+<li>TLS 1.3 and the handshake in one handshake. So one round trip give you a connection setup, the security and the encryption</li>
+<li>Congestion control at stream level</li>
+<li>Connection migration (coz UDP is stateless, we have to send the connectionID with every single packet we send. The connectionID is used to uniquely identify the connection. So multiple connections can be running. And coz we send the connectionID, every datagram is labelled with the connectionID, every datagram is labelled with the streamID<ul>
+<li>Interestingly, the connectionID is not encrypted and is in plaintext. There’s a paper talking about connection hijacking</li>
+</ul>
+</li>
+<li>Why not HTTP/2 over QUIC?<ul>
+<li>Header compression algorithm</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Cons</p>
+<ul>
+<li>Takes a lot of CPU (due to parsing logic), more than HTTP/2</li>
+<li>UDP could be blocked (sometimes proxies like in enterprise systems block UDP</li>
+<li>IP fragmentation issues (coz QUIC uses UDP and UDP has no order etc, segments can be spoofed etc etc)</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>Interesting; QUIC is actually the reverse of HTTP/2 - odd streams are server while even streams are the client</p>
+</li>
+<li>QUIC is a connection based system. Yes it’s built on top of UDP, they built this virrtual connection concept at the endpoint</li>
+</ul>
+<h2 id="grpc-google-remote-procedural-call"><strong>gRPC (Google remote procedural call)</strong></h2>
+<ul>
+<li>built on top of HTTP</li>
+<li>takes advantage of HTTP/2 streams feattures to give various features such as bidirectional.</li>
+<li>
+<p>All in 1 protocol??</p>
+</li>
+<li>
+<p>Client server comms</p>
+<ul>
+<li>SOAP, REST&lt; GraphQL</li>
+<li>SSE, WebSockets</li>
+<li>raw TCP</li>
+</ul>
+</li>
+<li>
+<p>Problerm with client librarries</p>
+<ul>
+<li>each library has its own language</li>
+<li>patching issues etc etc</li>
+</ul>
+</li>
+<li>
+<p>why gRPC was invvented?</p>
+<ul>
+<li>one library for popular langs<ul>
+<li></li>
+</ul>
+</li>
+<li>Protocol: HTTP/2 (hidden implementation)</li>
+<li>Message format: protocol buffers as format</li>
+</ul>
+</li>
+<li>
+<p>gRPC modes</p>
+<ul>
+<li>unary RPC (basically req response)</li>
+<li>server streaming RPC</li>
+<li>client streaming RPC</li>
+<li>bidirectional streaming RPC</li>
+</ul>
+</li>
+<li>
+<p>Pros</p>
+<ul>
+<li>Fast &amp; compact</li>
+<li>One client library</li>
+<li>Progress feedback (upload)</li>
+<li>Cancel req (H2)</li>
+<li>H2/protobuf</li>
+</ul>
+</li>
+<li>
+<p>Cons</p>
+<ul>
+<li>Schema</li>
+<li>Thick client</li>
+<li>proxies are tricky to implement in gRPX but its been done<ul>
+<li>can do L7 LB/reverse proxy using nginx with gRPC but its tricky.</li>
+<li>you can build a gRPC web proxy, where you can point your web app to the gRPC proxy and proxy will convert them into an actual gRPC course (like a sidecar pattern)</li>
+</ul>
+</li>
+<li>error handling (need to build your own, no native one)</li>
+<li>no native browser support<ul>
+<li>(gRPC is entrenched to HTTP/2, uses low level calls to HTTP/2 streams</li>
+<li>those APIs dont exist in the browser because hte browser doesn’t expose them</li>
+<li></li>
+</ul>
+</li>
+<li>timeouts (pub/sub)</li>
+</ul>
+</li>
+<li>
+<p>Can I write my own protocol?</p>
+<ul>
+<li>yes, you can. Spotify did something similar. Look at “The Story of Whhy we migrate to gRPC and How We Go about it” talk in kubecon Europe 2019 (Matthias Gruter, Spotify)</li>
+<li>Their protocol was called Herms (written in 2012, based on zeroMQ, JSON or Protobuf payload, not a PRC framework</li>
+<li>Spotify moved to gRPC eventually not because of limitation of Hermes but because they are isoalated. gRPC is most popular.</li>
+</ul>
+</li>
+<li>
+<p>gRPC is most popular in microservices now. if 2 services want to talk to each other, the de-facto is gRPC.</p>
+</li>
+</ul>
+<hr />
+<h2 id="many-ways-to-https"><strong>Many ways to HTTPS</strong></h2>
+<p><strong>HTTP Communication basics</strong></p>
+<ul>
+<li>Establish connection with backend</li>
+<li>establish encryption (HTTPS right. TLS!)</li>
+<li>Send data</li>
+<li>Close connection (when done)</li>
+</ul>
+<p><strong>HTTPS over TCP with TLS1.2</strong></p>
+<ul>
+<li>TCP connect (syn syn/ack ack) &gt;&gt; establish TCP connection</li>
+<li>handshake (client hello, server hello, client fin, server fin) &gt;&gt; client and server do handshake in order to agree on symmetric key. They both do key exchange algorithm and both have the symmetric key for encrypting and decrypting</li>
+<li>data send (GET /, 200 OK)</li>
+</ul>
+<p><strong>HTTPS over TCP with TLS 1.3</strong></p>
+<ul>
+<li>same as HTTPS over TCP with TLS 1.2 but with one less roundtrip (on the key exchange part)</li>
+<li>better to use TLS 1.3 unless you have a backward compatibility issue</li>
+</ul>
+<p><strong>HTTPS over QUIC aka HTTP/3</strong> </p>
+<ul>
+<li>the 3 way handshake and the TLS handshake happens in the same router. It’s a matter of carrying the same packets in the same time</li>
+<li>so we effectively combined TLS 1.3 with the handshake of QUIC</li>
+<li>all of it is built on UDP</li>
+<li>so all of the requests are a bunch of UDP segments - datagrams going back and forth</li>
+</ul>
+<p><strong>HTTPS over TFO with TLS 1.3 (TCP Fast Open, not really secure)</strong></p>
+<ul>
+<li></li>
+</ul>
+<p><strong>HTTP over TCP with TLS1.3 0RTT (0 round trip)</strong></p>
+<ul>
+<li>if a prior TLS connection existed between client and server, a pre shared key could have been shared to the client</li>
+<li>0 round trip so less waiting time so less latency</li>
+</ul>
+<p><strong>HTTPS over QUIC 0RTT</strong></p>
+<ul>
+<li>if pre shared key was shared before and client knows about it, it can effectively send the QUIC handshake</li>
+<li>This is the fastest you can go. You can set the connection req for QUIC, in the same breath, send TLS - use pre-shared key to encrypt and also send GET req in the same breath.</li>
+<li>if this can be done, you can get extreme response time! very very fast</li>
+<li>so far only Cloudflare can manage to do this effectively in their environment (read article by Cloudflare called “Even faster connection with QUIC 0-RTT resumption”</li>
+<li>This is quite difficult to do but really fast.</li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../../..';</script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../../assets/js/mkdocs.js""></script>
+			<script src="../../../search/main.js" defer></script>
+
+</body>
+
+</html>

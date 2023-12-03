@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Basics - School of DevOps</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://moabukar.github.io/school-of-devops/level1/git/git-basics/">
+        <meta name="author" content="Mohamed Abukar">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">School of DevOps</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-1-(fundamentals)-collapse" aria-expanded="false">
+                    Level 1 (Fundamentals)
+                </a>
+                <div class="collapse" id="level-1-(fundamentals)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#linux-collapse" aria-expanded="false">
+            Linux
+        </a>
+
+        <div class="collapse" id="linux-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../linux/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../linux/cli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CLI
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#git-collapse" aria-expanded="false">
+            Git
+        </a>
+
+        <div class="collapse" id="git-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../branches/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Working With Branches
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../github-hooks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Github and Hooks
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../conclusion/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Conclusion
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#networking-collapse" aria-expanded="false">
+            Networking
+        </a>
+
+        <div class="collapse" id="networking-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/osi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/protocols/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Protocols
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/proxies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxies
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../networking/load-balancers/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Load balancers
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#aws-collapse" aria-expanded="false">
+            AWS
+        </a>
+
+        <div class="collapse" id="aws-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Introduction
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../aws/compute/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Compute
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-2-(infrastructure-&-containers)-collapse" aria-expanded="false">
+                    Level 2 (Infrastructure & Containers)
+                </a>
+                <div class="collapse" id="level-2-(infrastructure-&-containers)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#terraform-collapse" aria-expanded="false">
+            Terraform
+        </a>
+
+        <div class="collapse" id="terraform-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/building.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Building with Terraform
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/modules.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modules & Advanced
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/cloud.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Terraform in the Cloud
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/terraform/best-practices.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Best Practices
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#docker-collapse" aria-expanded="false">
+            Docker
+        </a>
+
+        <div class="collapse" id="docker-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/containers.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Containers
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/building.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Building with Docker
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/compose.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose & Multi-Container Apps
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/docker/advanced.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Advanced & Best Practices
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#cicd-collapse" aria-expanded="false">
+            CICD
+        </a>
+
+        <div class="collapse" id="cicd-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Intro to CICD
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Getting started with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/ci.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Continuous Integration with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/cd.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Continuous Deployment & Delivery with GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/iac.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IaC & GitHub Actions
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/advanced.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Advanced Features
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/cicd/real-world.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Real-world applications
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#kubernetes-collapse" aria-expanded="false">
+            Kubernetes
+        </a>
+
+        <div class="collapse" id="kubernetes-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/plan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Syllabus
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/intro/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Basics
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/setup.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Setting up a K8s environemnt
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level2/k8s/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            K8s core concepts
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-3-(scripting-&-coding)-collapse" aria-expanded="false">
+                    Level 3 (Scripting & Coding)
+                </a>
+                <div class="collapse" id="level-3-(scripting-&-coding)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#python-collapse" aria-expanded="false">
+            Python
+        </a>
+
+        <div class="collapse" id="python-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/python/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Python plan
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#golang-collapse" aria-expanded="false">
+            Golang
+        </a>
+
+        <div class="collapse" id="golang-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/golang/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Golang basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#scripting-collapse" aria-expanded="false">
+            Scripting
+        </a>
+
+        <div class="collapse" id="scripting-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level3/scripting/basics.md"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scripting basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#level-4-(monitoring-&-infra-management)-collapse" aria-expanded="false">
+                    Level 4 (Monitoring & Infra Management)
+                </a>
+                <div class="collapse" id="level-4-(monitoring-&-infra-management)-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#ansible-collapse" aria-expanded="false">
+            Ansible
+        </a>
+
+        <div class="collapse" id="ansible-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/ansible/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ansible plan
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#helm-collapse" aria-expanded="false">
+            Helm
+        </a>
+
+        <div class="collapse" id="helm-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/helm/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Helm basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#monitoring-collapse" aria-expanded="false">
+            Monitoring
+        </a>
+
+        <div class="collapse" id="monitoring-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/monitoring/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Monitoring basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#sre-collapse" aria-expanded="false">
+            SRE
+        </a>
+
+        <div class="collapse" id="sre-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../level4/sre/basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SRE basics
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../../CONTRIBUTING/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Contribute
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../../CODE_OF_CONDUCT/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Code of Conduct
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../linux/cli/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../branches/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="git">Git</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>Have Git installed <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li>Have taken any git high level tutorial or following LinkedIn learning courses<ul>
+<li><a href="https://www.linkedin.com/learning/git-essential-training-the-basics/">https://www.linkedin.com/learning/git-essential-training-the-basics/</a></li>
+<li><a href="https://www.linkedin.com/learning/git-branches-merges-and-remotes/">https://www.linkedin.com/learning/git-branches-merges-and-remotes/</a></li>
+<li><a href="https://git-scm.com/doc">The Official Git Docs</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="what-to-expect-from-this-course">What to expect from this course</h2>
+<p>As a DevOps Engineer in the field of tech and comp sci, having knowledge of version control tools becomes almost a requirement. While there are a lot of version control tools that exist today like SVN, Mercurial, etc, Git perhaps is the most used one and this course we will be working with Git. While this course does not start with Git 101 and expects basic knowledge of git as a prerequisite, it will reintroduce the git concepts known by you with details covering what is happening under the hood as you execute various git commands. So that next time you run a git command, you will be able to press enter more confidently!</p>
+<h2 id="what-is-not-covered-under-this-course">What is not covered under this course</h2>
+<p>Advanced usage and specifics of internal implementation details of Git.</p>
+<h2 id="course-contents">Course Contents</h2>
+<ol>
+<li><a href="https://linkedin.github.io/school-of-sre/level101/git/git-basics/#git-basics">Git Basics</a></li>
+<li><a href="https://linkedin.github.io/school-of-sre/level101/git/branches/">Working with Branches</a></li>
+<li><a href="https://linkedin.github.io/school-of-sre/level101/git/github-hooks/#git-with-github">Git with Github</a></li>
+<li><a href="https://linkedin.github.io/school-of-sre/level101/git/github-hooks/#hooks">Hooks</a></li>
+</ol>
+<h2 id="git-basics">Git Basics</h2>
+<p>Though you might be aware already, let's revisit why we need a version control system. As the project grows and multiple developers start working on it, an efficient method for collaboration is warranted. Git helps the team collaborate easily and also maintains the history of the changes happening with the codebase.</p>
+<h3 id="creating-a-git-repo">Creating a Git Repo</h3>
+<p>Any folder can be converted into a git repository. After executing the following command, we will see a <code>.git</code> folder within the folder, which makes our folder a git repository. <strong>All the magic that git does, <code>.git</code> folder is the enabler for the same.</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># creating an empty folder and changing current dir to it</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/tmp
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>$<span class="w"> </span>mkdir<span class="w"> </span>school-of-devops
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>school-of-devops/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># initialize a git repo</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>$<span class="w"> </span>git<span class="w"> </span>init
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Initialized<span class="w"> </span>empty<span class="w"> </span>Git<span class="w"> </span>repository<span class="w"> </span><span class="k">in</span><span class="w"> </span>/private/tmp/school-of-devops/.git/
+</code></pre></div>
+<p>As the output says, an empty git repo has been initialized in our folder. Let's take a look at what is there.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>ls<span class="w"> </span>.git/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>HEAD<span class="w">        </span>config<span class="w">      </span>description<span class="w"> </span>hooks<span class="w">       </span>info<span class="w">        </span>objects<span class="w">     </span>refs
+</code></pre></div>
+<p>There are a bunch of folders and files in the <code>.git</code> folder. As I said, all these enables git to do its magic. We will look into some of these folders and files. But for now, what we have is an empty git repository.</p>
+<h3 id="tracking-a-file">Tracking a File</h3>
+<p>Now as you might already know, let us create a new file in our repo (we will refer to the folder as <em>repo</em> now.) And see git status</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;I am file 1&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>file1.txt
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span>git<span class="w"> </span>status
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>On<span class="w"> </span>branch<span class="w"> </span>master
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>No<span class="w"> </span>commits<span class="w"> </span>yet
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>Untracked<span class="w"> </span>files:
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w"> </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>include<span class="w"> </span><span class="k">in</span><span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">       </span>file1.txt
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>nothing<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>commit<span class="w"> </span>but<span class="w"> </span>untracked<span class="w"> </span>files<span class="w"> </span>present<span class="w"> </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add&quot;</span><span class="w"> </span>to<span class="w"> </span>track<span class="o">)</span>
+</code></pre></div>
+<p>The current git status says <code>No commits yet</code> and there is one untracked file. Since we just created the file, git is not tracking that file. We explicitly need to ask git to track files and folders. (also checkout <a href="https://git-scm.com/docs/gitignore">gitignore</a>) And how we do that is via <code>git add</code> command as suggested in the above output. Then we go ahead and create a  commit.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file1.txt
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>$<span class="w"> </span>git<span class="w"> </span>status
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>On<span class="w"> </span>branch<span class="w"> </span>master
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>No<span class="w"> </span>commits<span class="w"> </span>yet
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>committed:
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w"> </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git rm --cached &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>unstage<span class="o">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">       </span>new<span class="w"> </span>file:<span class="w">   </span>file1.txt
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;adding file 1&quot;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="o">[</span>master<span class="w"> </span><span class="o">(</span>root-commit<span class="o">)</span><span class="w"> </span>df2fb7a<span class="o">]</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">1</span><span class="w"> </span>insertion<span class="o">(</span>+<span class="o">)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>create<span class="w"> </span>mode<span class="w"> </span><span class="m">100644</span><span class="w"> </span>file1.txt
+</code></pre></div>
+<p>Notice how after adding the file, git status says <code>Changes to be committed:</code>. What it means is whatever is listed there, will be included in the next commit. Then we go ahead and create a commit, with an attached messaged via <code>-m</code>.</p>
+<h3 id="more-about-a-commit">More About a Commit</h3>
+<p>Commit is a snapshot of the repo. Whenever a commit is made, a snapshot of the current state of repo (the folder) is taken and saved. Each commit has a unique ID. (<code>df2fb7a</code> for the commit we made in the previous step). As we keep adding/changing more and more contents and keep making commits, all those snapshots are stored by git. Again, all this magic happens inside the <code>.git</code> folder. This is where all this snapshot or versions are stored <em>in an efficient manner.</em></p>
+<h3 id="adding-more-changes">Adding More Changes</h3>
+<p>Let us create one more file and commit the change. It would look the same as the previous commit we made.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;I am file 2&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>file2.txt
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file2.txt
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;adding file 2&quot;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">[</span>master<span class="w"> </span>7f3b00e<span class="o">]</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">1</span><span class="w"> </span>insertion<span class="o">(</span>+<span class="o">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>create<span class="w"> </span>mode<span class="w"> </span><span class="m">100644</span><span class="w"> </span>file2.txt
+</code></pre></div>
+<p>A new commit with ID <code>7f3b00e</code> has been created. You can issue <code>git status</code> at any time to see the state of the repository.</p>
+<div class="highlight"><pre><span></span><code>   **IMPORTANT: Note that commit IDs are long string (SHA) but we can refer to a commit by its initial few (8 or more) characters too. We will interchangeably using shorter and longer commit IDs.**
+</code></pre></div>
+<p>Now that we have two commits, let's visualize them:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>*<span class="w"> </span>7f3b00e<span class="w"> </span><span class="o">(</span>HEAD<span class="w"> </span>-&gt;<span class="w"> </span>master<span class="o">)</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>*<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<p><code>git log</code>, as the name suggests, prints the log of all the git commits. Here you see two additional arguments, <code>--oneline</code> prints the shorter version of the log, ie: the commit message only and not the person who made the commit and when. <code>--graph</code> prints it in graph format.</p>
+<p><strong>Now at this moment the commits might look like just one in each line but all commits are stored as a tree like data structure internally by git. That means there can be two or more children commits of a given commit. And not just a single line of commits. We will look more into this part when we get to the Branches section. For now this is our commit history:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">   </span><span class="nv">df2fb7a</span><span class="w"> </span><span class="o">===</span>&gt;<span class="w"> </span>7f3b00e
+</code></pre></div>
+<h3 id="are-commits-really-linked">Are commits really linked?</h3>
+<p>As I just said, the two commits we just made are linked via tree like data structure and we saw how they are linked. But let's actually verify it. Everything in git is an object. Newly created files are stored as an object. Changes to file are stored as an objects and even commits are objects. To view contents of an object we can use the following command with the object's ID. We will take a look at the contents of the second commit</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>git<span class="w"> </span>cat-file<span class="w"> </span>-p<span class="w"> </span>7f3b00e
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tree<span class="w"> </span>ebf3af44d253e5328340026e45a9fa9ae3ea1982
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>parent<span class="w"> </span>df2fb7a61f5d40c1191e0fdeb0fc5d6e7969685a
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>author<span class="w"> </span>Sanket<span class="w"> </span>Patel<span class="w"> </span>&lt;spatel1@linkedin.com&gt;<span class="w"> </span><span class="m">1603273316</span><span class="w"> </span>-0700
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>committer<span class="w"> </span>Sanket<span class="w"> </span>Patel<span class="w"> </span>&lt;spatel1@linkedin.com&gt;<span class="w"> </span><span class="m">1603273316</span><span class="w"> </span>-0700
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+</code></pre></div>
+<p>Take a note of <code>parent</code> attribute in the above output. It points to the commit id of the first commit we made. So this proves that they are linked! Additionally you can see the second commit's message in this object. As I said all this magic is enabled by <code>.git</code> folder and the object to which we are looking at also is in that folder.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>$<span class="w"> </span>ls<span class="w"> </span>.git/objects/7f/3b00eaa957815884198e2fdfec29361108d6a9
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>.git/objects/7f/3b00eaa957815884198e2fdfec29361108d6a9
+</code></pre></div>
+<p>It is stored in <code>.git/objects/</code> folder. All the files and changes to them as well are stored in this folder.</p>
+<h3 id="the-version-control-part-of-git">The Version Control part of Git</h3>
+<p>We already can see two commits (versions) in our git log. One thing a version control tool gives you is ability to browse back and forth in history. For example: some of your users are running an old version of code and they are reporting an issue. In order to debug the issue, you need access to the old code. The one in your current repo is the latest code. In this example, you are working on the second commit (7f3b00e) and someone reported an issue with the code snapshot at commit (df2fb7a). This is how you would get access to the code at any older commit</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Current contents, two files present</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>$<span class="w"> </span>ls
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>file1.txt<span class="w"> </span>file2.txt
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># checking out to (an older) commit</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>df2fb7a
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Note:<span class="w"> </span>checking<span class="w"> </span>out<span class="w"> </span><span class="s1">&#39;df2fb7a&#39;</span>.
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>You<span class="w"> </span>are<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s1">&#39;detached HEAD&#39;</span><span class="w"> </span>state.<span class="w"> </span>You<span class="w"> </span>can<span class="w"> </span>look<span class="w"> </span>around,<span class="w"> </span>make<span class="w"> </span>experimental
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>changes<span class="w"> </span>and<span class="w"> </span>commit<span class="w"> </span>them,<span class="w"> </span>and<span class="w"> </span>you<span class="w"> </span>can<span class="w"> </span>discard<span class="w"> </span>any<span class="w"> </span>commits<span class="w"> </span>you<span class="w"> </span>make<span class="w"> </span><span class="k">in</span><span class="w"> </span>this
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>state<span class="w"> </span>without<span class="w"> </span>impacting<span class="w"> </span>any<span class="w"> </span>branches<span class="w"> </span>by<span class="w"> </span>performing<span class="w"> </span>another<span class="w"> </span>checkout.
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>If<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>create<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>branch<span class="w"> </span>to<span class="w"> </span>retain<span class="w"> </span>commits<span class="w"> </span>you<span class="w"> </span>create,<span class="w"> </span>you<span class="w"> </span>may
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="k">do</span><span class="w"> </span>so<span class="w"> </span><span class="o">(</span>now<span class="w"> </span>or<span class="w"> </span>later<span class="o">)</span><span class="w"> </span>by<span class="w"> </span>using<span class="w"> </span>-b<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>checkout<span class="w"> </span><span class="nb">command</span><span class="w"> </span>again.<span class="w"> </span>Example:
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>&lt;new-branch-name&gt;
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>HEAD<span class="w"> </span>is<span class="w"> </span>now<span class="w"> </span>at<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="c1"># checking contents, can verify it has old contents</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>$<span class="w"> </span>ls
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>file1.txt
+</code></pre></div>
+<p>So this is how we would get access to old versions/snapshots. All we need is a <em>reference</em> to that snapshot. Upon executing <code>git checkout ...</code>, what git does for you is use the <code>.git</code> folder, see what was the state of things (files and folders) at that version/reference and replace the contents of current directory with those contents. The then-existing content will no longer be present in the local dir (repo) but we can and will still get access to them because they are tracked via git commit and <code>.git</code> folder has them stored/tracked.</p>
+<h3 id="reference">Reference</h3>
+<p>I mention in the previous section that we need a <em>reference</em> to the version. By default, git repo is made of tree of commits. And each commit has a unique IDs. But the unique ID is not the only thing we can reference commits via. There are multiple ways to reference commits. For example: <code>HEAD</code> is a reference to current commit. <em>Whatever commit your repo is checked out at, <code>HEAD</code> will point to that.</em> <code>HEAD~1</code> is reference to previous commit. So while checking out previous version in section above, we could have done <code>git checkout HEAD~1</code>.</p>
+<p>Similarly, master is also a reference (to a branch). Since git uses tree like structure to store commits, there of course will be branches. And the default branch is called <code>master</code>. Master (or any branch reference) will point to the latest commit in the branch. Even though we have checked out to the previous commit in out repo, <code>master</code> still points to the latest commit. And we can get back to the latest version by checkout at <code>master</code> reference</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>master
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Previous<span class="w"> </span>HEAD<span class="w"> </span>position<span class="w"> </span>was<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Switched<span class="w"> </span>to<span class="w"> </span>branch<span class="w"> </span><span class="s1">&#39;master&#39;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># now we will see latest code, with two files</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>$<span class="w"> </span>ls
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>file1.txt<span class="w"> </span>file2.txt
+</code></pre></div>
+<p>Note, instead of <code>master</code> in above command, we could have used commit's ID as well.</p>
+<h3 id="references-and-the-magic">References and The Magic</h3>
+<p>Let's look at the state of things. Two commits, <code>master</code> and <code>HEAD</code> references are pointing to the latest commit</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>$<span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>*<span class="w"> </span>7f3b00e<span class="w"> </span><span class="o">(</span>HEAD<span class="w"> </span>-&gt;<span class="w"> </span>master<span class="o">)</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>*<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<p>The magic? Let's examine these files:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>$<span class="w"> </span>cat<span class="w"> </span>.git/refs/heads/master
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>7f3b00eaa957815884198e2fdfec29361108d6a9
+</code></pre></div>
+<p>Viola! Where master is pointing to is stored in a file. <strong>Whenever git needs to know where master reference is pointing to, or if git needs to update where master points, it just needs to update the file above.</strong> So when you create a new commit, a new commit is created on top of the current commit and the master file is updated with the new commit's ID.</p>
+<p>Similary, for <code>HEAD</code> reference:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>$<span class="w"> </span>cat<span class="w"> </span>.git/HEAD
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>ref:<span class="w"> </span>refs/heads/master
+</code></pre></div>
+<p>We can see <code>HEAD</code> is pointing to a reference called <code>refs/heads/master</code>. So <code>HEAD</code> will point where ever the <code>master</code> points.</p>
+<h3 id="little-adventure">Little Adventure</h3>
+<p>We discussed how git will update the files as we execute commands. But let's try to do it ourselves, by hand, and see what happens.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>$<span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>*<span class="w"> </span>7f3b00e<span class="w"> </span><span class="o">(</span>HEAD<span class="w"> </span>-&gt;<span class="w"> </span>master<span class="o">)</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>*<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<p>Now let's change master to point to the previous/first commit.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>df2fb7a61f5d40c1191e0fdeb0fc5d6e7969685a<span class="w"> </span>&gt;<span class="w"> </span>.git/refs/heads/master
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>$<span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>*<span class="w"> </span>df2fb7a<span class="w"> </span><span class="o">(</span>HEAD<span class="w"> </span>-&gt;<span class="w"> </span>master<span class="o">)</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="c1"># RESETTING TO ORIGINAL</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>7f3b00eaa957815884198e2fdfec29361108d6a9<span class="w"> </span>&gt;<span class="w"> </span>.git/refs/heads/master
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>$<span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>*<span class="w"> </span>7f3b00e<span class="w"> </span><span class="o">(</span>HEAD<span class="w"> </span>-&gt;<span class="w"> </span>master<span class="o">)</span><span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>*<span class="w"> </span>df2fb7a<span class="w"> </span>adding<span class="w"> </span>file<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<p>We just edited the <code>master</code> reference file and now we can see only the first commit in git log. Undoing the change to the file brings the state back to original. Not so much of magic, is it?</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../../..';</script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../../assets/js/mkdocs.js""></script>
+			<script src="../../../search/main.js" defer></script>
+
+</body>
+
+</html>
