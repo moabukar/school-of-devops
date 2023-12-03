@@ -1,11 +1,13 @@
 site_name: School of DevOps
+site_description: School of DevOps Doc
 site_url: https://moabukar.github.io/school-of-devops/
 site_author: Mohamed Abukar
+
 repo_url: https://github.com/moabukar/school-of-devops
 dev_addr: "127.0.0.1:8000"
 docs_dir: docs
 theme: 
-  name: material
+  name: dracula
   # custom_dir: overrides
   extra_css:
     - stylesheets/custom.css
@@ -26,14 +28,26 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: dark_blue
-      accent: purple 
+      primary: indigo
+      accent: indigo
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: teal
       accent: lime
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+
+plugins:
+  - search
+  # - exclude:
+  #     glob:
+  #       - "**/include-*.md"
+  - git-revision-date
+  # - pdf-export:
+  #     combined: true
 
 nav:
 - Home: index.md
